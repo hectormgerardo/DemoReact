@@ -37,6 +37,11 @@
   }
 }
 
+.img {
+  height: 400px;
+  margin-left: 25%;
+}
+
 body {
   background-color: #ffffff;
 }
