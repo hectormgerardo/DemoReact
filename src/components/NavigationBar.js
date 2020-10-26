@@ -13,12 +13,16 @@ const Styles = styled.div`
       color: white;
     }
   }
+
+  .logo {
+    height: 55px;
+  }
 `;
 
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Code Life</Navbar.Brand>
+      <Navbar.Brand href="/"><img class="logo" src="/images/logomedia.png"></img></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
