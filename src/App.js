@@ -13,44 +13,26 @@ import { Map, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 
 class App extends Component {
-    render() {
-        return ( <
-            React.Fragment >
-            <
-            Router >
-            <
-            NavigationBar / >
-            <
-            Layout >
-            <
-            Switch >
-            <
-            Route exact path = "/"
-            component = { Home }
-            /> <
-            Route path = "/mapas"
-            component = { Mapas }
-            /> <
-            Route path = "/descarga"
-            component = { Descarga }
-            /> <
-            Route path = "/analisis"
-            component = { Analisis }
-            /> <
-            Route path = "/explicacion"
-            component = { Explicacion }
-            /> <
-            Route path = "/contact"
-            component = { Contact }
-            /> <
-            Route component = { NoMatch }
-            /> <
-            /Switch> <
-            /Layout> <
-            /Router> <
-            /React.Fragment>
-        );
-    }
+  render() {
+    return (
+      <React.Fragment>
+        <Router>
+          <NavigationBar />
+          <Layout>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/mapas" component={Mapas} />
+              <Route path="/descarga" component={Descarga} />
+              <Route path="/analisis" component={Analisis} />
+              <Route path="/explicacion" component={Explicacion} />
+              <Route path="/contact" component={Contact} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Layout>
+        </Router>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
